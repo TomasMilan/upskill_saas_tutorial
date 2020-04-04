@@ -14,22 +14,19 @@
  *= require_self
  */
  
- @import 'bootstrap-sprockets';
- @import 'bootstrap';
+
+ @import "bootstrap-sprockets";
+ @import "bootstrap";
+
  
  @import "font-awesome-sprockets";
  @import "font-awesome";
  
  // Typography Styles
- h1, h3 {
+ h1, h2, h3 {
      font-family: 'Sen', sans-serif;
-     color: white;
  }
- 
- h2{
-  font-family: 'Sen', sans-serif;
-  color: black;
- }
+
 
 // Background Gradient
 .navbar, .home-callout{
@@ -62,6 +59,18 @@
     float: right;
     margin: 0;
 }
+
+.navbar-default .navbar-toggle .icon-bar {
+    background-color: white;
+}
+
+.navbar-default .navbar-toggle {
+  border: 2px solid white;
+  &:hover, &:focus {
+   background-color: #73C6B6;
+  }
+}
+
 
 
 // Home Page Styles
